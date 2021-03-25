@@ -1,0 +1,16 @@
+1) Saving a csv data as dataframe: os.chdir("enter the entire directory path")
+and then pd.read_csv("file name")
+
+2) Problem faced: 
+
+The entire dataset contains words as well meanings. Each letter has more than 10,000 words and their meanings and to manually delete meaning of each word will take infinite amount of time. 
+
+I have written a python code to remove this.
+First split the word and its meaning. this is done by str.split()(Since these are strings so had to use str)
+
+Then save each of these split words in to an list. 
+finally use OrderedDict.fromkeys to remove duplicate words. 
+
+OrderedDict is much faster than any other methode to remove duplicate words. 
+
+
